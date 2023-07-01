@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap");
+
 body {
   background: #f2f2f2;
   color: #444;
@@ -8,26 +10,6 @@ body * {
 }
 
 /* header */
-header {
-  text-align: center;
-  background: #e7e7e7;
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header img {
-  max-width: 60px;
-  transform: rotate(-10deg);
-}
-header h1 {
-  margin: 0;
-  font-size: 2em;
-  padding-top: 25px;
-  margin-left: 15px;
-  color: #777;
-  transform: rotate(2deg);
-}
 
 /* task list */
 .task-list {
@@ -93,29 +75,6 @@ header h1 {
 .new-task-form {
   background: #e7e7e7;
   padding: 20px 0;
-}
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 10px;
-}
-form button {
-  background: #ffd859;
-  border: 0;
-  padding: 10px;
-  font-family: "Poppins";
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-}
-form input {
-  border: 0;
-  padding: 10px;
-  border-radius: 6px;
-  color: #555;
-  font-size: 1em;
 }
 
 /* loading state */

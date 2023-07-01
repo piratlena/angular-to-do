@@ -1,0 +1,15 @@
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+}
+
+form input {
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 1em;
+}

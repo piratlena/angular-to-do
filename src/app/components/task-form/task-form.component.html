@@ -1,0 +1,8 @@
+<form>
+  <input type="text" placeholder="I need to" name="title" [(ngModel)]="title" />
+  <app-button
+    color="green"
+    text="Add"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</form>

@@ -8,9 +8,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { TaskFormComponent } from './components/task-form/task-form.component';
 import { TaskItemComponent } from './components/task-item/task-item.component';
 import { ButtonComponent } from './components/button/button.component';
+import { TaskListComponent } from './components/task-list/task-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, TaskFormComponent, TaskItemComponent, ButtonComponent],
+  declarations: [AppComponent, HeaderComponent, TaskFormComponent, TaskItemComponent, ButtonComponent, TaskListComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

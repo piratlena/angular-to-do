@@ -19,9 +19,12 @@ export class TaskListComponent implements OnInit {
   toggleFav(task: Task) {
     task.isFavorite = !task.isFavorite;
   }
+
   toggleAlarm(task: Task) {
     task.reminder = !task.reminder;
+    this.taskService.toggleAlarm(task).subscribe();
   }
+
   deleteTask(task: Task) {
     this.taskService
       .deleteTask(task)

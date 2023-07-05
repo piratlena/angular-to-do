@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,8 +12,15 @@ import { ButtonComponent } from './components/button/button.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, TaskFormComponent, TaskItemComponent, ButtonComponent, TaskListComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    TaskFormComponent,
+    TaskItemComponent,
+    ButtonComponent,
+    TaskListComponent,
+  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,3 +1,9 @@
 <div class="task-list">
-  <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+  <app-task-item
+    *ngFor="let task of tasks"
+    [task]="task"
+    (onToggleFav)="toggleFav(task)"
+    (onToggleReminder)="toggleAlarm(task)"
+    (onDeleteTask)="deleteTask(task)"
+  ></app-task-item>
 </div>

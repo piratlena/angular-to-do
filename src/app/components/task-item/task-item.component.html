@@ -5,8 +5,18 @@
   </div>
 
   <div class="icons">
-    <i class="material-icons">schedule</i>
-    <i class="material-icons">favorite</i>
-    <i class="material-icons">delete</i>
+    <i
+      class="material-icons"
+      (click)="onSwitch(task)"
+      [ngClass]="{ active: task.reminder }"
+      >schedule</i
+    >
+    <i
+      class="material-icons"
+      (click)="onToggle(task)"
+      [ngClass]="{ active: task.isFavorite }"
+      >favorite</i
+    >
+    <i class="material-icons" (click)="onDelete(task)">delete</i>
   </div>
 </div>

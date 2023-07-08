@@ -19,3 +19,11 @@ header h1 {
   color: #777;
   transform: rotate(2deg);
 }
+.btn-show {
+  color: black;
+  margin-left: 50px;
+}
+.active {
+  background: #ff005d;
+  color: white;
+}

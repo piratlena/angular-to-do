@@ -1,8 +1,35 @@
-<form>
-  <input type="text" placeholder="I need to" name="title" [(ngModel)]="title" />
+<form (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input
+      type="text"
+      placeholder="I need to"
+      name="text"
+      id="text"
+      [(ngModel)]="taskTitle"
+    />
+  </div>
+
+  <div class="form-control">
+    <label for="day">Add Day & Time</label>
+    <input
+      type="text"
+      placeholder="Add Day & Time"
+      name="day"
+      id="day"
+      [(ngModel)]="day"
+    />
+  </div>
+
+  <div class="form-checkbox">
+    <label for="reminder">Set reminder</label>
+    <input type="checkbox" name="reminder" id="reminder" />
+  </div>
+
   <app-button
     color="green"
     text="Add"
     (btnClick)="toggleAddTask()"
+    type="submit"
   ></app-button>
 </form>

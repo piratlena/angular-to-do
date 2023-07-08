@@ -4,14 +4,14 @@
       "id": 1,
       "taskTitle": "Listhen to music",
       "isFavorite": true,
-      "reminder": true,
+      "reminder": false,
       "day": "May 5th at 2.30pm"
     },
     {
       "id": 2,
       "taskTitle": "Listhen to music",
-      "isFavorite": true,
-      "reminder": false,
+      "isFavorite": false,
+      "reminder": true,
       "day": "May 5th at 2.30pm"
     },
     {
@@ -27,6 +27,27 @@
       "isFavorite": true,
       "reminder": true,
       "day": "May 5th at 2.30pm"
+    },
+    {
+      "taskTitle": "to go for a walk",
+      "reminder": false,
+      "isFavorite": false,
+      "day": "26",
+      "id": 5
+    },
+    {
+      "id": 6,
+      "taskTitle": "watch a movie",
+      "reminder": false,
+      "isFavorite": false,
+      "day": "May 6th"
+    },
+    {
+      "id": 7,
+      "taskTitle": "go hicking",
+      "reminder": false,
+      "isFavorite": false,
+      "day": "at Julay 9"
     }
   ]
 }

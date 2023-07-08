@@ -16,13 +16,14 @@ export class TaskListComponent implements OnInit {
     this.taskService.getTasks().subscribe((tasks) => (this.tasks = tasks));
   }
 
-  toggleFav(task: Task) {
-    task.isFavorite = !task.isFavorite;
-  }
-
   toggleAlarm(task: Task) {
     task.reminder = !task.reminder;
     this.taskService.toggleAlarm(task).subscribe();
+  }
+
+  toggleFav(task: Task) {
+    task.isFavorite = !task.isFavorite;
+    this.taskService.toggleFav(task).subscribe();
   }
 
   deleteTask(task: Task) {
@@ -31,5 +32,8 @@ export class TaskListComponent implements OnInit {
       .subscribe(
         () => (this.tasks = this.tasks.filter((t) => t.id !== task.id))
       );
+  }
+  addTask(task: Task) {
+    this.taskService.addTask(task).subscribe((task) => this.tasks.push(task));
   }
 }

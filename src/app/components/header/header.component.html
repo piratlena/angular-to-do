@@ -2,6 +2,7 @@
   <img src="../../../assets/angular-logo.svg" alt="" />
   <h1>Angular tasks</h1>
   <app-button
+    *ngIf="hasRoute('/')"
     class="btn-show"
     text="{{ showAddTask ? 'Close' : 'Add Task' }}"
     (btnClick)="toggleAddTask()"

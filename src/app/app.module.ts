@@ -14,6 +14,7 @@ import { TaskListComponent } from './components/task-list/task-list.component';
 import { AddTaskComponent } from './components/add-task/add-task.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MyColorDirective } from './directives/01-simple-directive/my-color.directive';
 
 const appRoutes: Routes = [
   { path: '', component: TaskListComponent },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     AddTaskComponent,
     AboutComponent,
     FooterComponent,
+    MyColorDirective,
   ],
   imports: [
     BrowserModule,
